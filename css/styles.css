@@ -1,0 +1,38 @@
+*{
+    font-family: Raleway;
+    overflow-x: hidden;
+}
+
+#hero_area{
+    background-color: #070F2B !important; 
+}
+.small{
+    font-size: small !important;
+}
+
+button{
+    border-radius: 0 !important;
+}
+
+#skills-wrapper .logo{
+    width: 30px;
+    height: 30px;
+}
+
+.logo-convering{
+    flex-wrap: wrap;
+}
+
+.btn-logo{
+    box-shadow: 5px 5px rgba(211, 211, 211, 0.445);
+    width: 150px; height: 100px;
+}
+
+.btn-logo:hover {
+    box-shadow: 10px 10px lightgrey;
+}
+
+.hero-btn:hover{
+    box-shadow: 4px 4px lightgrey;
+}
+

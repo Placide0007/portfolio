@@ -1,74 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
-    <script defer src="/bootstrap/bootstrap.min.js"></script>
+    <script defer src="bootstrap/bootstrap.min.js"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <title>Portoflio</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <title>Portfolio</title>
 </head>
 
 <body>
-    <!-- debut hero-section -->
+    <!-- début hero-section -->
     <section id="hero_area" class="container-fluid vh-100 d-flex justify-content-center align-items-center text-light">
         <div class="row">
-            <div class="col-12  p-5">
+            <div class="col-12 p-5">
                 <p class="salama lead">Bonjour !! 👋,</p>
-                <h1 class="display-3 fw-bold">Étudiant en informatique, avec un fort intérêt pour le développement web.
+                <h1 class="display-3 fw-bold">
+                    "Je suis un étudiant en informatique, avec un fort intérêt pour le développement web."
                 </h1>
-                <p class="">je m'appel <span class="fw-bold">ANDRIATAHINA Lazare Placide</span></p>
-                <div class="btn-group">
-                    <button class="btn btn-dark px-5">A propos de moi</button>
-                    <button class="btn btn-secondary px-5">Mes Projets</button>
-                </div>
+                <p class="">je m'appelle <span class="fw-bold">ANDRIATAHINA Lazare Placide</span></p>
+                <button class="btn btn-dark px-5 hero-btn mx-3 mb-3 mb-md-0">A propos de moi</button>
+                <button class="btn btn-secondary hero-btn mx-3 mb-3 mb-md-0">Mes Projets</button>
             </div>
         </div>
     </section>
     <!-- fin hero-section -->
-    <div id="section_competence" class="bg-light">
+
+    <!-- début section skills -->
+    <div id="section_competence" class="bg-light p-5 container-fluid">
         <div class="row">
-            <div class="col-12  p-5">
+            <div class="col-12 p-1">
                 <h1 class="display-5 fw-bold text-center">Mes compétences</h1>
                 <p class="text-center">Vous trouverez ci-dessous un aperçu de mes compétences.</p>
             </div>
-            <div id="skills-wrapper" class="col-12">
+            <div id="skills-wrapper" class="p-5">
                 <div class="logo-convering d-flex justify-content-center align-items-center">
-                    <button class="btn m-2 border rounded">
+                    <!-- Remarque : Chaque bouton logo est bien formaté -->
+                    <button class="btn btn-logo m-2 border rounded">
                         <object class="logo" data="./assets/logo/html.svg" type=""></object>
                         <br>
                         HTML5
                     </button>
-                    <button class="btn rounded hover-overlay shadow-sm m-2 border">
+                    <button class="btn btn-logo px-5 py-3 rounded m-2 border">
                         <object class="logo" data="./assets/logo/css.svg" type=""></object>
                         <br>
                         CSS3
                     </button>
-                    <button class="btn rounded hover-overlay shadow-sm m-2 border">
+                    <button class="btn btn-logo px-5 py-3 rounded m-2 border">
                         <object class="logo" data="./assets/logo/javascript.svg" type=""></object>
                         <br>
                         Javascript
                     </button>
-                    <button class="btn rounded hover-overlay shadow-sm m-2 border">
+                    <button class="btn btn-logo px-5 py-3 rounded m-2 border">
                         <object class="logo" data="./assets/logo/bootstrap.svg" type=""></object>
                         <br>
-                        bootstrap5
+                        Bootstrap5
                     </button>
-                    <button class="btn rounded hover-overlay shadow-sm m-2 border">
+                    <button class="btn btn-logo px-5 py-3 rounded m-2 border">
                         <object class="logo" data="./assets/logo/vue.svg" type=""></object>
                         <br>
                         VueJs
                     </button>
-                    <button class="btn rounded hover-overlay shadow-sm m-2 border">
+                    <button class="btn btn-logo px-5 py-3 rounded m-2 border">
                         <object class="logo" data="./assets/logo/laravel.svg" type=""></object>
                         <br>
                         Laravel
                     </button>
-                    <button class="btn rounded hover-overlay shadow-sm m-2 border">
+                    <button class="btn btn-logo px-5 py-3 rounded border">
                         <object class="logo" data="./assets/logo/mysql.svg" type=""></object>
                         <br>
                         Mysql
@@ -77,6 +81,83 @@
             </div>
         </div>
     </div>
+    <!-- fin section skills -->
+
+    <!-- début about me section -->
+    <div id="about_section" class="border p-5 bg-light shadow-sm container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="display-5 fw-bold text-center">A propos de moi</h1>
+                <p class="text-center lead">
+                    Je suis étudiant en première année de Master (M1) en Informatique à la Faculté des Sciences et
+                    Technologies de l’Université de Toamasina. Passionné par l’informatique depuis mon plus jeune âge,
+                    j’ai développé un fort intérêt pour le développement web, ce qui m’a poussé à me spécialiser dans ce
+                    domaine. Grâce à mon cursus universitaire, j’acquiers des connaissances approfondies en informatique
+                    tout en perfectionnant mes compétences pratiques.
+                   <div class="d-flex justify-content-center align-items-center" >
+                        <a class="btn btn-primary mx-3 mb-3 mb-md-0" href="./assets/CV.pdf">Telecharger mon cv</a>
+                   </div>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- fin about me section -->
+
+    <!-- début project list -->
+    <div id="section_project" class="container-fluid p-5 border bg-light">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="display-5 fw-bold text-center mb-4">Liste de projets personnels</h1>
+            </div>
+            <div class="col-12 col-md-4">
+                <p class="lead fw-bold text-primary">mini_blog</p>
+                <p>Le projet Mini Blog de partage de ressources entre étudiants permet aux étudiants de publier des
+                    ressources pédagogiques (articles, notes de cours) et de commenter les publications.
+                    L'objectif est de faciliter l'échange de connaissances au sein de la communauté étudiante.
+                    Le site sera développé avec Vue.js 3, Laravel 12, MySQL, et Bootstrap 5, offrant une
+                    interface simple et responsive.</p>
+                <div class="btn-group">
+                    <a class="btn btn-primary"  href="https://github.com/Placide0007/mini_blog.git">Code Source</a>
+                    <a class="btn btn-secondary" href="./assets/demo/demo.mp4">Demonstration</a>
+                </div>
+            </div>
+            <div class="col-12 col-md-8">
+                <section class="splide" aria-labelledby="carousel-heading">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide"><img class="img-fluid" src="./assets/images/home.png" alt=""></li>
+                            <li class="splide__slide"><img class="img-fluid" src="./assets/images/about.png" alt="">
+                            </li>
+                            <li class="splide__slide"><img class="img-fluid" src="./assets/images/forum.png" alt="">
+                            </li>
+                            <li class="splide__slide"><img class="img-fluid" src="./assets/images/aboutMe.png" alt="">
+                            </li>
+                            <li class="splide__slide"><img class="img-fluid" src="./assets/images/details.png" alt="">
+                            </li>
+                            <li class="splide__slide"><img class="img-fluid" src="./assets/images/login.png" alt="">
+                            </li>
+                            <li class="splide__slide"><img class="img-fluid" src="./assets/images/register.png" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- fin project list -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var splide = new Splide('.splide', {
+                type: 'fade',
+                heightRatio: 0.5,
+                arrows: true,
+                autoplay: true,
+                interval: 5000
+            });
+            splide.mount();
+        });
+    </script>
 </body>
 
 </html>
