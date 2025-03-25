@@ -104,7 +104,7 @@
     <!-- fin about me section -->
 
     <!-- début project list -->
-    <div id="section_project" class="container-fluid p-5 border bg-light">
+    <div id="section_project" class="container-fluid p-5  bg-light">
         <div class="row">
             <div class="col-12">
                 <h1 class="display-5 fw-bold text-center mb-4">Liste de projets personnels</h1>
@@ -117,45 +117,83 @@
                     Le site sera développé avec Vue.js 3, Laravel 12, MySQL, et Bootstrap 5, offrant une
                     interface simple et responsive.</p>
                 <div class="btn-group">
-                    <a class="btn btn-primary"  href="https://github.com/Placide0007/mini_blog.git">Code Source</a>
-                    <a class="btn btn-secondary" href="./assets/demo/demo.mp4">Demonstration</a>
+                    <a class="btn btn-primary mb-3"  href="https://github.com/Placide0007/mini_blog.git">Code Source</a>
+                    <a class="btn btn-secondary mb-3" href="./assets/demo/demo.mp4">Demonstration</a>
                 </div>
             </div>
             <div class="col-12 col-md-8">
-                <section class="splide" aria-labelledby="carousel-heading">
+                <section class="splide splide-1" aria-labelledby="carousel-heading">
                     <div class="splide__track">
                         <ul class="splide__list">
                             <li class="splide__slide"><img class="img-fluid" src="./assets/images/home.png" alt=""></li>
-                            <li class="splide__slide"><img class="img-fluid" src="./assets/images/about.png" alt="">
-                            </li>
-                            <li class="splide__slide"><img class="img-fluid" src="./assets/images/forum.png" alt="">
-                            </li>
-                            <li class="splide__slide"><img class="img-fluid" src="./assets/images/aboutMe.png" alt="">
-                            </li>
-                            <li class="splide__slide"><img class="img-fluid" src="./assets/images/details.png" alt="">
-                            </li>
-                            <li class="splide__slide"><img class="img-fluid" src="./assets/images/login.png" alt="">
-                            </li>
-                            <li class="splide__slide"><img class="img-fluid" src="./assets/images/register.png" alt="">
-                            </li>
+                            <li class="splide__slide"><img class="img-fluid" src="./assets/images/about.png" alt=""></li>
+                            <li class="splide__slide"><img class="img-fluid" src="./assets/images/forum.png" alt=""></li>
+                            <li class="splide__slide"><img class="img-fluid" src="./assets/images/aboutMe.png" alt=""></li>
+                            <li class="splide__slide"><img class="img-fluid" src="./assets/images/details.png" alt=""></li>
+                            <li class="splide__slide"><img class="img-fluid" src="./assets/images/login.png" alt=""></li>
+                            <li class="splide__slide"><img class="img-fluid" src="./assets/images/register.png" alt=""></li>
                         </ul>
                     </div>
                 </section>
             </div>
         </div>
     </div>
-    <!-- fin project list -->
+
+    <!-- Début du deuxième carrousel -->
+    <div id="section_project_2" class="container-fluid p-5  bg-light">
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <p class="lead fw-bold text-primary">MiaryProject</p>
+                <p>Plateforme pour aider les agriculteurs malgaches à adopter des méthodes modernes. Contenu sous forme d'articles et fichiers audio, accessible aux illettrés et lettrés. Disponible sur web et mobile, avec un focus sur les pratiques durables.
+                    Technologies : Laravel 11, Bootstrap 5, MySQL, Git.</p>
+                <div class="btn-group">
+                    <a class="btn btn-primary mb-3"  href="https://github.com/Placide0007/MiaryProject.git">Code Source</a>
+                    <a class="btn btn-secondary mb-3" href="./assets/demo/demo.mp4">Demonstration</a>
+                </div>
+            </div>
+            <div class="col-12 col-md-8">
+                <section class="splide splide-2" aria-labelledby="carousel-heading">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide"><img class="img-fluid" src="./assets/images/culture/fandraisana.png" alt=""></li>
+                            <li class="splide__slide"><img class="img-fluid" src="./assets/images/culture/details culture.png" alt=""></li>
+                            <li class="splide__slide"><img class="img-fluid" src="./assets/images/culture/new culture.png" alt=""></li>
+                            <li class="splide__slide"><img class="img-fluid" src="./assets/images/culture/user.png" alt=""></li>
+                            <li class="splide__slide"><img class="img-fluid" src="./assets/images/culture/post admin.png" alt=""></li>
+                            <li class="splide__slide"><img class="img-fluid" src="./assets/images/culture/register.png" alt=""></li>
+                            <li class="splide__slide"><img class="img-fluid" src="./assets/images/culture/login.png" alt=""></li>
+                            <li class="splide__slide"><img class="img-fluid" src="./assets/images/culture/premium.png" alt=""></li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Fin du deuxième carrousel -->
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            var splide = new Splide('.splide', {
+            // Premier carrousel
+            var splide1 = new Splide('.splide-1', {
                 type: 'fade',
                 heightRatio: 0.5,
                 arrows: true,
                 autoplay: true,
-                interval: 5000
+                interval: 3000
             });
-            splide.mount();
+            splide1.mount();
+
+            // Deuxième carrousel
+            var splide2 = new Splide('.splide-2', {
+                type: 'fade',
+                heightRatio: 0.5,
+                arrows: true,
+                autoplay: true,
+                interval: 3000
+            });
+            splide2.mount();
         });
     </script>
 </body>
